@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Team 6 | Contact</title>
+  <link href="template.css" type="text/css" rel="stylesheet">
+  <style>
+    .describe {
+      display: grid;
+      grid-area: auto;
+      margin-left: 100px;
+      margin-right: 100px;
+      text-align: center;
+    }
+
+    .mainDesc {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    button[type=submit] {
+      border-color: black;
+      background-color: #e8e8e8;
+      border: 1px;
+      margin-left: 450px;
+      border-style: solid;
+      border-radius: 20px;
+      width: 200px;
+      height: 40px;
+      font-size: medium;
+      font-weight: bold;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    button[type=submit]:hover {
+      background-color: white;
+      margin-left: 450px;
+    }
+
+    .footer {
+      bottom: 0px;
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div include-html="navigation.html"></div>
+    <div class="main">
+      <div class="describe">
+        <center>
+          <h1>Contact Information</h1>
+        </center>
+        <h3 class="mainDesc">
+          Our main goal is 100% customer satisfaction. We have a 30 days return
+          policy on all the items. We do full refund or exchange as per the customers'
+          wish. If you feel any discomfort or need an exchange,
+          contact our support team. Support
+          team is available 24/7 via chat and email. Use the chat and email only for
+          queries with products and shipment. For further suggestions, please visit Survey
+          to explain your experience with Team6 shoes collection.
+        </h3>
+        <p>
+          For questions with order and shipment please email to <u><b>xyz@mail.sfsu.edu</b></u> or chat
+          with a team member to assist with the order.
+        </p><br>
+        <button type="submit">
+          Chat With Members
+        </button>
+      </div>
+      <div class="footer">
+        <p><a href="">Legal Information</a> | <a href="">Privacy Policy</a> |
+          <a href="">Copyright &copy; Team 6 Spring 2022</a>
+        </p>
+      </div>
+    </div>
+</body>
+<script src="includeHeader.js"></script>
+<script>
+  includeHTML();
+</script>
+</html>

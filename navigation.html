@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <style>
+    #_search{
+      border-radius: 15px;
+    }
+  </style>
+  
+  <script>
+    function openPage(){
+      var userInput = document.getElementById("_search").value;
+    
+      if(a === "dc"){
+        window.open("/cart.html");
+      }
+      if(a === "dc shoes"){
+        window.open("/cart.html");
+      }
+    }
+  </script>
+<div class="header">
+  <div id="logo"><a href="/home"><img src="images/teamLogo.png" 
+    width="80" height="80"></a></div>
+  <div onmousedown=scroll() id="search">
+    <form action="" method="get">
+        <input type="search" id="_search" value="" name="search" size="50" maxlength="100" 
+        placeholder="Search..." onchange="openPage()">
+    </form>
+  </div>
+  <div id="home"><a class="box" href="/home">Home</a></div>
+  <div id="products"><a class="box" href="/products">Products</a></div>
+  <div id="about"><a class="box" href="/about">About Us</a></div>
+  <div id="contact"><a class="box" href="/contact">Contact Us</a></div>
+  <div id="survey"><a class="box" href="/survey">Survey</a></div>
+  <div id="login"><a class="box" href="/login">Login | Signup</a></div>
+  <div id="cart"><a class="box" href="/cart">Cart | Checkout</a></div>
+</div>
+</body>
+
+</html>

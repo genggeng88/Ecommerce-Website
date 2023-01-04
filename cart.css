@@ -1,0 +1,77 @@
+.main {
+  grid-row: auto;
+  grid-column: auto;
+  justify-items: stretch;
+}
+
+.cart {
+  grid-area: 1/1/2/7;
+  background: linear-gradient(149deg, rgba(175, 235, 228), #878fdd);
+  background-size: covered;
+  margin: 10px;
+  margin-left: 100px;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.subtotal {
+  grid-area: 1/7/2/9;
+  padding-top: 20px;
+  background: linear-gradient(149deg, rgba(175, 235, 228), #878fdd);
+  margin: 10px;
+  margin-right: 100px;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.image {
+  text-align: center;
+  padding: 20px;
+  margin-left: 100px;
+  background: linear-gradient(149deg,
+      rgb(247, 0, 255) 0%,
+      rgb(255, 145, 0) 100%);
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.describe {
+  padding: 20px;
+  padding-top: 30px;
+  background: linear-gradient(149deg, rgba(175, 235, 228), #878fdd);
+
+
+  margin: 10px;
+}
+
+.price {
+  padding: 20px;
+  padding-top: 30px;
+  background: linear-gradient(149deg, rgba(175, 235, 228), #878fdd);
+  margin: 10px;
+}
+
+.related {
+  padding: 10px;
+  padding-top: 20px;
+  grid-area: 2/7/6/9;
+  background: linear-gradient(149deg, rgba(175, 235, 228), #878fdd);
+  margin: 10px;
+  margin-right: 100px;
+  text-align: center;
+}
+
+.box2 {
+  background-color: white;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.box2:hover {
+  background-color: wheat;
+}

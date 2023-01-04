@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Team 6 | Home</title>
+  <link href="template.css" type="text/css" rel="stylesheet">
+  <style>
+    .scroll {
+      scroll-behavior: smooth;
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: 100%;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      overscroll-behavior: contain;
+      background-color: azure;
+      height: 300px;
+      scrollbar-width: none;
+      width: 100%;
+      justify-self: center;
+    }
+
+    
+
+    .menu {
+      display: flexbox;
+      padding: 3px;
+      grid-auto-flow: column;
+      justify-self: center;
+    }
+
+    .margin {
+      height: 100%;
+      width: 100px;
+    }
+
+    .page {
+      margin-top: 10px;
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: 100px 1fr 100px;
+    }
+
+    button[type=button] {
+      border: 0;
+      height: 20px;
+      width: 20px;
+      border-radius: 20px;
+      background-color: rgb(188, 238, 238);
+      border: 1px grey solid;
+    }
+
+    button[type=button]:hover {
+      background-color: white;
+    }
+
+    section {
+      display: flex;
+    }
+
+    section img {
+      display: inline-block;
+      height: 300px;
+    }
+
+    section div {
+      display: inline-block;
+      height: 300px;
+      width: 100%;
+      text-align: center;
+    }
+
+    a:visited {
+      text-decoration: none;
+    }
+
+    a:visited {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    #first {
+      background: linear-gradient(135deg, #304074, #33dbbc);
+    }
+
+    #second {
+      background: linear-gradient(135deg, Black, #33dbbc);
+      color: white;
+    }
+
+    #third {
+      background: linear-gradient(135deg, white, #33dbbc);
+    }
+
+    #first,
+    #second,
+    #third {
+      line-height: 300px;
+      font-size: xx-large;
+    }
+
+    #shoes {
+      display:grid;
+      grid-auto-flow:row;
+      background: linear-gradient(135deg, azure, #ce8d00);
+    }
+
+    #laces {
+      display: grid;
+      grid-auto-flow: row;
+      background: linear-gradient(135deg, #937774, azure);
+    }
+
+    #insoles {
+      display: grid;
+      grid-auto-flow: row;
+      background: linear-gradient(135deg, azure, #b94425); 
+    }
+
+    .categories {
+      display: flex;
+      height:350px;
+      overflow:scroll;
+    }
+
+    .categories img {
+      display: block;
+      position:relative;
+      top:20px;
+      left:20px;
+      width: auto;
+      height: 100%;
+      transition: .2s linear;
+    }
+
+    .categories div {
+      overflow: hidden;
+      display: grid;
+      width: 100%;
+    }
+
+    #normal[type=button] {
+      display:block;
+      position:relative;
+      margin:auto;
+      left:100px;
+      bottom:125px;
+      width: 100px;
+      height: 75px;
+      
+      background-color: rgb(150,150,150);
+    }
+
+    #normal[type=button]:hover {
+      background-color: white;
+    }
+
+
+  </style>
+  <script>
+    function scroll(){
+      elem = document.getElementById('scroll');
+      elem.scrollBy(1,0)
+      scrolldelay = setTimeout(scroll,10);
+    }
+    function addZoom(id){
+      elem = document.getElementById(id);
+      elem.style.scale = '150%';
+    }
+    function addBlur(id){
+      elem = document.getElementById(id);
+      elem.style.filter = 'blur(3px)';
+    }
+    function removeZoom(id){
+      elem = document.getElementById(id);
+      elem.style.scale = '100%';
+    }
+    function removeBlur(id){
+      elem = document.getElementById(id);
+      elem.style.filter = 'blur(0px)';
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div include-html="navigation.html"></div>
+    <div class="page">
+      <div class="margin"></div>
+      <div class="main">
+
+        <div class="scroll" id="scroll">
+          <section id="0">
+            <div class="img"><img src="images/kids01.jpeg"></div>
+            <div id="first">
+              <a href="individualProduct/individualProduct_02.html">FEATURED ITEMS</a>
+            </div>
+          </section>
+          <section id="1">
+            <div class="img"><img src="images/lynxzero-blo.jpg"></div>
+            <div id="second">
+              <a href="individualProduct/individualProduct_01.html">NEW ARRIVALS</a>
+            </div>
+          </section>
+          <section id="2">
+            <div class="img"><img src="images/related_women.jpeg"></div>
+            <div id="third">
+              <a href="individualProduct/individualProduct_03.html">FOR HER</a>
+            </div>
+          </section>
+        </div>
+        <div class="menu">
+          <a href="#0"><button type="button"></button></a>
+          <a href="#1"><button type="button"></button></a>
+          <a href="#2"><button type="button"></button></a>
+        </div>
+        SEE ALSO
+        <div class="categories">
+          <div id="shoes">
+            <img id="categoryImage1" src="images/women01.png">
+            <a href="/products"><button 
+              onmouseover="addZoom('categoryImage1');
+              addBlur('categoryImage1');"
+              onmouseout="removeZoom('categoryImage1');removeBlur('categoryImage1');" id="normal" type="button">
+              SHOES</button></a>
+          </div>
+          <div id="laces">
+            <img id="categoryImage2" src="images/laces/rockport_Hiker_White.png">
+            <a href="/products#_laces"><button 
+              onmouseover="addZoom('categoryImage2');
+              addBlur('categoryImage2');"
+              onmouseout="removeZoom('categoryImage2');
+              removeBlur('categoryImage2');" id="normal" type="button">
+              LACES</button></a>
+          </div>
+          <div id="insoles">
+            <img id="categoryImage3" src="images/insoles/AIRR_Insole.png">
+            <a href="/products#_insoles"><button 
+              onmouseover="addZoom('categoryImage3');
+              addBlur('categoryImage3');" 
+              onmouseout="removeZoom('categoryImage3');
+              removeBlur('categoryImage3');" id="normal" type="button">
+              INSOLES</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="margin"></div>
+    </div>
+
+    <div class="footer">
+      <p><a href="">Legal Information</a> | <a href="">Privacy Policy</a> |
+        <a href="">Copyright &copy; Team 6 Spring 2022</a>
+      </p>
+    </div>
+  </div>
+</body>
+<script src="includeHeader.js"></script>
+<script>
+  includeHTML();
+</script>
+
+</html>

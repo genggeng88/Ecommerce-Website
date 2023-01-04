@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>.- Team 6 | Products</title>
+    <link href="templateTestJS.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+          <div id="logo"><a href="home.html"><img src="images/teamLogo.png" width="80" height="80"></a></div>
+          <div id="search">
+          <form action="" method="get">
+              <label>
+                <input type="text" name="search" size="50" maxlength="100" placeholder="Search">
+              </label>
+            </form>
+          </div>
+          <div id="home"><a class="box" href="home.html">Home</a></div>
+
+          <div id="products">
+            <a class="box active" href="products.html" onmouseover="myFunction()">Products</a>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#_shoes">SHOES</a>
+              <a href="#_laces">LACES</a>
+              <a href="#_insoles">INSOLES</a>
+              <a href="#_sales">SALES</a>
+            </div>
+          </div>
+
+          <div id="about"><a class="box" href="about.html">About Us</a></div>
+          <div id="contact"><a class="box" href="contact.html">Contact Us</a></div>
+          <div id="survey"><a class="box" href="survey.html">Survey</a></div>
+          <div id="login"><a class="box" href="login.html">Login | Signup</a></div>
+          <div id="cart"><a class="box" href="cart.html">Cart | Checkout</a></div>
+      </div>
+      <div class="main">
+          
+        <br/><br/><br/>
+      
+        <!--*********************************************-->
+      
+        <!-- Products Category -->
+        <!-- Anchore -->
+      <!--
+        <table class="category" border="1" width="100%">
+          <tr align="center" bgcolor="#9FE1E1">
+            <td width="50%"><a href="#_shoes"><p>SHOES</p></a></td>
+            <td><a href="#_laces"><p>LACES</p></a></td>
+          </tr>
+          <tr align="center" bgcolor="#9FE1E1">
+            <td width="50%"><a href="#_insoles"><p>INSOLES</p></a></td>
+            <td><a href="#_sales"><p>SALES</p></a></td>
+          </tr>
+        </table>
+      -->
+      
+        <br/><br/><br/>
+      
+      <!--
+        <div class="dropdown">
+          <button onmouseover="myFunction()" class="dropbtn">Dropdown</button>        
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#_sales">Sales</a>
+          </div>
+        </div>
+      -->
+
+        <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        function myFunctionHide(){
+          document.getElementById("myDropdown").classList.toggle("hide");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+
+        <br/><br/><br/>
+
+        <!-- -->
+        <!-- SHOES -->
+        <!-- -->
+        <table  class="margeTop" align="center" width="100%" border="0">
+          <tr>
+            <td>
+              <fieldset>
+                <legend id="_goTop" align="center"><h1 id="_shoes"><b>SHOES</b></h1></legend>
+      
+                <!-- Brands Category -->
+                <table align="center" border="0" width="75%" class="brandShoes">
+                  <tr align="center" bgcolor="#F0FFFF">
+                    <td width="33%"><a href="shoesByBrand/brand_DC-Shoes.html"><p>DC SHOES</p></a></td>
+                    <td><a href="shoesByBrand/brand_DC-Shoes.html"><p>NIKE</p></a></td>
+                    <td width="33%"><a href="shoesByBrand/brand_DC-Shoes.html"><p>ADIDAS</p></a></td>
+                  </tr>
+                  <tr align="center" bgcolor="#F0FFFF">
+                    <td width="33%"><a href="shoesByBrand/brand_Puma.html"><p>PUMA</p></a></td>
+                    <td><a href="shoesByBrand/brand_DC-Shoes.html"><p>ASICS</p></a></td>
+                    <td width="33%"><a href="shoesByBrand/brand_DC-Shoes.html"><p>VANS</p></a></td>
+                  </tr>
+                </table>
+                
+                <br/>
+                
+                <!-- Display Products -->
+                <table align="center" border="0" width="80%" cellspacing="10">
+                  <tr align="center">
+                    <td>
+                      <a href="individualProduct/individualProduct_01.html">
+                        <img width="100%" src="images/lynxzero-blo.jpg">
+                      </a>
+                    </td>
+                    <td>
+                      <a href="individualProduct/individualProduct_02.html">
+                        <img width="100%" src="images/kids01.jpeg">
+                      </a>
+                    </td>
+                    <td>
+                      <a href="individualProduct/individualProduct_03.html">
+                        <img width="100%" src="images/related_women.jpeg">
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="diplayShoes">
+                    <td width=20% bgcolor="#F0FFFF" class="hoveProducts">
+                      <a href="individualProduct/individualProduct_01.html">
+                        <center>Lynxzero-Blo. Brand: DC Shoes<br/>Price: $65.00</center>
+                      </a>
+                    </td>
+                    <td width=20% bgcolor="#F0FFFF" class="hoveProducts">
+                      <a href="individualProduct/individualProduct_02.html">
+                        <center>Kids Sports Shoes. Little Boy<br/>Price: $45.00</center></td>
+                      </a>
+                    <td width=20% bgcolor="#F0FFFF" class="hoveProducts">
+                      <a href="individualProduct/individualProduct_03.html">
+                        <center>Womens Air Force. Brand: Nike<br/>Price: $80.00</center>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr align="center">
+                    <td><img width="100%" src="images/women01.jpeg"></td>
+                    <td><img width="100%" src="images/KidsCheckerboardSlip-On.png"></td>
+                    <td><img width="100%" src="images/Adilette_Aqua_Slides.jpg"></td>
+                  </tr>
+                  <tr class="diplayShoes">
+                    <td width=20% bgcolor="#F0FFFF" class="hoveProducts"><center>Womens Air Force 1 Shoes. Brand: Nike<br/>Price: $98.00</center></td>
+                    <td width=20% bgcolor="#F0FFFF" class="hoveProducts"><center>Kids Checkerboard Slip-On. Brand: Vans<br/>Price: $35.00</center></td>
+                    <td width=20% bgcolor="#F0FFFF" class="hoveProducts"><center>Adilette Aqua Slides. Brand: Adidas<br/>Price: $25.00</center></td>
+                  </tr>
+                </table>
+      
+                <br/>            
+
+                <div align="center"><a class="boxSeeMore" href="seeMore_Products/seeMoreShoes.html">SEE MORE...</a></div>
+
+              </fieldset>
+            </td>
+          </tr>
+        </table>
+      
+        <br/><br/><br/>
+      
+        <!-- -->
+        <!-- LACETS -->
+        <!-- -->
+        <table  align="center" width="100%" border="0">
+          <tr>
+            <td>
+              <fieldset>
+                <legend align="center"><h1 id="_laces"><b>LACES</b></h1></legend>
+      
+                <!-- Brands Category -->
+                <table align="center" border="0" width="75%" class="brandLaces">
+                  <tr align="center" bgcolor="#F0FFFF">
+                    <td width="33%"><p>NEW BALANCE</p></td>
+                    <td><p>ECCO</p></td>
+                    <td width="33%"><p>RED WING SHOES</p></td>
+                  </tr>
+                  <tr align="center" bgcolor="#F0FFFF">
+                    <td width="33%"><p>ROCKPORT</p></td>
+                    <td><p>OLD COOK</p></td>
+                    <td width="33%"><p>SPERRY</p></td>
+                  </tr>
+                </table>
+                
+                <br/>
+      
+                <!-- Display Products -->
+                <table align="center" border="0" width="80%" cellspacing="10">
+                  <tr align="center">
+                    <td>
+                      <a href="individualProduct/lacesIndividualProduct_01.html">
+                        <img width="100%" src="images/laces/newbalance_Athletic_Black.jpg">
+                      </a>
+                    </td>
+                    <td>
+                      <a href="individualProduct/lacesIndividualProduct_02.html">
+                        <img width="100%" src="images/laces/newbalance_Athletic_Pink.jpg">
+                      </a>
+                    </td>
+                    <td>
+                      <a href="individualProduct/lacesIndividualProduct_03.html">
+                        <img width="100%" src="images/laces/rockport_Hiker_Black.jpg">
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width=20% bgcolor="#F0FFFF">
+                      <a href="individualProduct/lacesIndividualProduct_01.html">
+                        <center>New Balance Athletic Black<br/>Nb: 2 pairs<br/>Price: $10.02</center>
+                      </a>
+                    </td>
+                    <td width=20% bgcolor="#F0FFFF">
+                      <a href="individualProduct/lacesIndividualProduct_02.html">
+                        <center>New Balance Athletic Pink<br/>Nb: 2 pairs<br/>Price: $10.02</center>
+                      </a>
+                    </td>
+                    <td width=20% bgcolor="#F0FFFF">
+                      <a href="individualProduct/lacesIndividualProduct_03.html">
+                        <center>Rockport Hiker Black<br/>Nb: 1 pair<br/>Price: $6.50</center>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr align="center">
+                    <td>            
+                      <img width="100%" src="images/laces/newbalance_Athletic_Brown.jpg">
+                    </td>
+                    <td>
+                        <img width="100%" src="images/laces/rockport_Hiker_White.jpg">
+                    </td>
+                    <td>
+                        <img width="100%" src="images/laces/newbalance_Athletic_Blue.jpg">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width=20% bgcolor="#F0FFFF"><center>New Balance Athletic Brown<br/>Nb: 2 pairs<br/>Price: $10.02</center></td>
+                    <td width=20% bgcolor="#F0FFFF"><center>Rockport Hiker White<br/>Nb: 1 pair<br/>Price: $6.50</center></td>
+                    <td width=20% bgcolor="#F0FFFF"><center>New Balance Athletic Blue<br/>Nb: 2 pairs<br/>Price: $10.02</center></td>
+                  </tr>
+                </table>
+      
+                <br/>
+                <div align="center"><a class="boxSeeMore" href="seeMore_Products/seeMoreShoes.html">SEE MORE...</a></div>
+              </fieldset>
+            </td>
+          </tr>
+        </table>
+      
+        <!-- -->
+        <!-- INSOLES -->
+        <!-- -->
+        <table  align="center" width="100%" border="0">
+          <tr>
+            <td>
+              <fieldset>
+                <legend align="center"><h1 id="_insoles"><b>INSOLES</b></h1></legend>
+      
+                <!-- Brands Category -->
+                <table align="center" border="0" width="75%" class="brandInsoles">
+                  <tr align="center" bgcolor="#F0FFFF">
+                    <td width="33%"><p>EVERYDAY</p></td>
+                    <td><p>RUNNING</p></td>
+                    <td width="33%"><p>CROSS-TRAINING</p></td>
+                  </tr>
+                  <tr align="center" bgcolor="#F0FFFF">
+                    <td width="33%"><p>HIKING</p></td>
+                    <td><p>OTHER SPORTS</p></td>
+                    <td width="33%"><p>WALKING</p></td>
+                  </tr>
+                </table>
+                
+                <br/>
+                
+                <!-- Display Products -->
+                <table align="center" border="0" width="80%" cellspacing="10">
+                  <tr align="center">
+                    <td><img width="100%" src="images/insoles/Arch_Insole.jpg"></td>
+                    <td><img width="100%" src="images/insoles/Cadence.jpg"></td>
+                    <td><img width="100%" src="images/insoles/Ultra_Arch_Basketball.jpg"></td>
+                  </tr>
+                  <tr>
+                    <td width=20% bgcolor="#F0FFFF"><center>Arch<br/>Price: $21.99</center></td>
+                    <td width=20% bgcolor="#F0FFFF"><center>Cadence<br/>Price: <strike>$44.95</strike> $38.21</center></td>
+                    <td width=20% bgcolor="#F0FFFF"><center>Ultra Arch for Basketball<br/>Price:39.95</center></td>
+                  </tr>
+                  <tr align="center">
+                    <td><img width="100%" src="images/insoles/Maximum.jpg"></td>
+                    <td><img width="100%" src="images/insoles/AIRR_Insole.jpg"></td>
+                    <td><img width="100%" src="images/insoles/Athletic_Insole.jpg"></td>
+                  </tr>
+                  <tr>
+                    <td width=20% bgcolor="#F0FFFF"><center>Maximum for Tennis<br/>Price: $39.95</center></td>
+                    <td width=20% bgcolor="#F0FFFF"><center>AIRR<br/>Price: $34.99</center></td>
+                    <td width=20% bgcolor="#F0FFFF"><center>Athletic<br/>Price: $29.99</center></td>
+                  </tr>
+                </table>
+      
+                <br/>
+                <div align="center"><a class="boxSeeMoreDown" href="seeMore_Products/seeMoreShoes.html">SEE MORE...</a></div>
+              </fieldset>
+            </td>
+          </tr>
+        </table>
+      
+        <br/><br/><br/>
+      
+        <!-- -->
+        <!-- SALES -->
+        <!-- -->
+        <table  align="center" width="100%" border="0">
+          <tr>
+            <td>
+              <fieldset>
+                <legend align="center"><h1 id="_sales"><b>SALES</b></h1></legend>
+      
+                <!-- Brands Category -->
+                <table align="center" border="0" width="75%" class="salesBrand">
+                  <tr align="center" bgcolor="#F0FFFF">
+                    <td width="33%"><p>DC SHOES</p></td>
+                    <td><p>NIKE</p></td>
+                    <td width="33%"><p>ADIDAS</p></td>
+                  </tr>
+                  <tr align="center" bgcolor="#F0FFFF">
+                    <td width="33%"><p>PUMA</p></td>
+                    <td><p>OASICS</p></td>
+                    <td width="33%"><p>VANS</p></td>
+                  </tr>
+                </table>
+                
+                <br/>
+                
+                <!-- Display Products -->
+                <table align="center" border="0" width="80%" cellspacing="10">
+                  <tr align="center">
+                    <td><img width="100%" src="images/women01.jpeg"></td>
+                    <td><img width="100%" src="images/laces/newbalance_Athletic_Pink.jpg"></td>
+                    <td><img width="100%" src="images/insoles/Cadence.jpg"></td>
+                  </tr>
+                  <tr>
+                    <td width=20% bgcolor="#F0FFFF"><center>2 * Womens Air Force 1 Shoes. Brand: Nike<br/>Price: <strike>$98.00</strike>$65.00 Each</center></td>
+                    <td width=20% bgcolor="#F0FFFF"><center>3 * New Balance Athletic for the price of 2<br/>Nb: 2*2 pairs<br/>Price: <strike>$30.06</strike> $20.04</center></td>
+                    <td width=20% bgcolor="#F0FFFF"><center>Cadence<br/>Price: <strike>$44.95</strike> $38.21</center></td>
+                  </tr>        
+                </table>
+                <br/>
+                <div align="center"><a class="boxSeeMoreDown" href="seeMore_Products/seeMoreShoes.html">SEE MORE...</a></div>
+              </fieldset>
+            </td>
+          </tr>
+        </table>
+
+        <div align="center"><a class="boxGoTop" href="#_goTop">Go Top</a></div>
+
+      </div>
+      <div class="footer">
+          <p><a href="">Legal Information</a> | <a href="">Privacy Policy</a> | 
+              <a href="">Copyright &copy; Team 6 Spring 2022</a></p>
+      </div>
+  </div>
+</body>
+</html>

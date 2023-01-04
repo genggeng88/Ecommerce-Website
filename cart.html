@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cart</title>
+  <link href="template.css" type="text/css" rel="stylesheet">
+  <link href="cart.css" type="text/css" rel="stylesheet">
+  <script src="cart.js" async></script>
+</head>
+
+<body>
+  <div class="container">
+    <div include-html="navigation.html"></div>
+    <div class="main">
+      <div class="cart">
+        <font size="+2"><b>Shopping Cart</b></font>
+      </div>
+      <div class="subtotal">
+        <center><br>
+          <font size="+2">Subtotal: </font><input type="text" class="subtotal0" value="143.0">
+        </center><br>
+        <center><a href="/checkout"><input type="button" value="Proceed to checkout"></a>
+        </center><br><br>
+      </div>
+      <div class="cart-items">
+        <div class="cart-item">
+          <div class="image"><img src="images/women01.jpeg" width=280 height=280></div>
+          <div class="describe">
+            <center>
+              <div class="cart-item-title">Womens Air Force 1 Shoes.</div>
+              <p>Qty:
+                <input class="quantity" type="number" min="1" value="1">
+              </p><br>
+              <input type="submit" class="btn-danger" value="remove"><br><br>
+              <input type="submit" value="save for later">
+            </center>
+          </div>
+          <div class="price">
+            <p>Price:<br><input type="text" class="item-price" value="$98.0" readonly></p>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <div class="image"><img src="images/kids01.jpeg" width=280 height=280></div>
+          <div class="describe">
+            <center>
+              <div class="cart-item-title">Kids Sports Shoes.</div>
+              <p>Qty:
+                <input class="quantity" type="number" min="1" value="1">
+              </p><br>
+              <input type="submit" class="btn-danger" value="remove"><br><br>
+              <input type="submit" value="save for later">
+            </center>
+          </div>
+          <div class="price">
+            <p>Price:<br><input type="text" class="item-price" value="$45.0" readonly></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="related">
+        <center>
+          <font size="+1"><b>Related items:</b></font>
+        </center><br>
+        <div class="related-item">
+          <img class="shop-item-image" src="images/related_women.jpeg" width="200" height="200">
+          <p class="shop-item-title">Womens Air Force.</p>
+          Price: <span class="shop-item-price">$78.99</span><br><br>
+          <button class="shop-item-button" type="button">ADD TO CART</button><br><br>
+        </div>
+
+        <div class="related-item">
+          <img class="shop-item-image" src="images/related_boy.jpeg" width="200" height="200">
+          <p class="shop-item-title">Boys Sports Shoes</p>
+          Price: <span class="shop-item-price">$38.99</span><br><br>
+          <button class="shop-item-button" type="button">ADD TO CART</button><br><br>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p><a href="">Legal Information</a> | <a href="">Privacy Policy</a> |
+        <a href="">Copyright &copy; Team 6 Spring 2022</a>
+      </p>
+    </div>
+  </div>
+</body>
+<script src="includeHeader.js"></script>
+<script>
+  includeHTML();
+</script>
+</html>

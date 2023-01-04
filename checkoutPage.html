@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Shoe Store Template</title>
+  <link href="template.css" type="text/css" rel="stylesheet">
+  <style>
+    .info {
+      display: grid;
+      grid-area: 1/1/2/2;
+      margin-left: 100px;
+      margin-right: 20px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .summary {
+      display: grid;
+      padding-left: 50px;
+      grid-area: 1/2/2/3;
+      margin-right: 100px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      background: linear-gradient(149deg, rgba(175, 235, 228), #878fdd);
+    }
+
+    .img01 {
+      padding-top: 20px;
+      display: grid;
+      grid-area: 1/1/2/2;
+    }
+
+    .img02 {
+      padding-top: 20px;
+      display: grid;
+      grid-area: 1/2/2/3;
+    }
+
+    .footer {
+      bottom: 0px;
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div id="logo"><a href="home.html"><img src="images/teamLogo.png" width="80" height="80"></a></div>
+      <div id="search">
+        <form action="" method="get">
+          <label>
+            <input type="text" name="search" size="50" maxlength="100" placeholder="Search">
+          </label>
+        </form>
+      </div>
+      <div id="home"><a class="box active" href="home.html">Home</a></div>
+      <div id="products"><a class="box" href="products.html">Products</a></div>
+      <div id="about"><a class="box" href="about.html">About Us</a></div>
+      <div id="contact"><a class="box" href="contact.html">Contact Us</a></div>
+      <div id="survey"><a class="box" href="survey.html">Survey</a></div>
+      <div id="login"><a class="box" href="login.html">Login | Signup</a></div>
+      <div id="cart"><a class="box" href="cart.html">Cart | Checkout</a></div>
+    </div>
+    <div class="main">
+      <div class="info">
+        <fieldset>
+          <legend>
+            <font size="+1"><b>Payment Info</b></font>
+          </legend><br>
+          <form name="payment">
+
+            <label for="cName">First Name: </label><br>
+            <input type="text" name="cName" id="cName" maxlength="100"><br><br>
+            <label for="lName">Last Name: </label><br>
+            <input type="text" name="lName" id="cName" maxlength="100"><br><br>
+            <label for="add">Address: </label><br>
+            <input type="text" name="add" id="add" maxlength="100"><br><br>
+            <label for="zCode">Zipcode: </label><br>
+            <input type="text" name="cName" id="zCode" maxlength="5"><br><br>
+            <label for="state">State: </label><br>
+            <select name="state" id="state">
+              <option value="Alabama">Alabama</option>
+              <option value="Alaska">Alaska</option>
+              <option value="Arizona">Arizona</option>
+              <option value="Arkansas">Arkansas</option>
+              <option value="California">California</option>
+              <option value="Colorado">Colorado</option>
+              <option value="Connecticut">Connecticut</option>
+              <option value="Delaware">Delaware</option>
+              <option value="Florida">Florida</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Hawaii">Hawaii</option>
+              <option value="Idaho">Idaho</option>
+              <option value="Illinois">Illinois</option>
+              <option value="Indiana">Indiana</option>
+              <option value="Iowa">Iowa</option>
+              <option value="Kansas">Kansas</option>
+              <option value="Kentucky">Kentucky</option>
+              <option value="Louisiana">Louisiana</option>
+              <option value="Maine">Maine</option>
+              <option value="Maryland">Maryland</option>
+              <option value="Massachusetts">Massachusetts</option>
+              <option value="Michigan">Michigan</option>
+              <option value="Minnesota">Minnesota</option>
+              <option value="Mississippi">Mississippi</option>
+              <option value="Missouri">Missouri</option>
+              <option value="Montana">Montana</option>
+              <option value="Nebraska">Nebraska</option>
+              <option value="Nevada">Nevada</option>
+              <option value="New Hampshire">New Hampshire</option>
+              <option value="New Jersey">New Jersey</option>
+              <option value="New Mexico">New Mexico</option>
+              <option value="New York">New York</option>
+              <option value="North Carolina">North Carolina</option>
+              <option value="North Dakota">North Dakota</option>
+              <option value="Ohio">Ohio</option>
+              <option value="Oklahoma">Oklahoma</option>
+              <option value="Oregon">Oregon</option>
+              <option value="Pennsylvania">Pennsylvania</option>
+              <option value="Rhode Island">Rhode Island</option>
+              <option value="South Carolina">South Carolina</option>
+              <option value="South Dakota">South Dakota</option>
+              <option value="Tennessee">Tennessee</option>
+              <option value="Texas">Texas</option>
+              <option value="Utah">Utah</option>
+              <option value="Vermont">Vermont</option>
+              <option value="Virginia">Virginia</option>
+              <option value="Washington">Washington</option>
+              <option value="West Virginia">West Virginia</option>
+              <option value="Wisconsin">Wisconsin</option>
+              <option value="Wyoming">Wyoming</option>
+            </select><br><br>
+            <label for="phone">Phone number: </label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+            <input type="checkbox" name="moreinfo" onclick="showpara();" checked>More Payment Info <br>
+            <p id="cardinfo">
+            <label for="fname">
+              <b>Card Number: </b><br>
+            </label>
+            <input type="text" id="fname" name="fname" size="30" maxlength="100"><br><br>
+
+            <label for="fname">
+              <b>Expiration Date: </b><br>
+            </label>
+            <input type="text" id="fname" name="fname" size="30" maxlength="100" placeholder="MM/DD"><br><br>
+
+            <label for="fname">
+              <b>Security Code: </b><br>
+              <input type="text" name="password" size="30" maxlength="100" placeholder="XXX"><br>
+            </label><br>
+            <input type="button" value="Place Order" onclick="alert('Submit Payment?')" />
+            <input type="reset" value="Reset">
+            <br>
+          </p>
+          </form>
+        </fieldset>
+      </div>
+      <div class="summary">
+        <div class="img01"><img src="images/women01.jpeg" width="200" height="200"></div>
+        <div class="img02"><img src="images/kids01.jpeg" width="200" height="200"></div>
+        <p>Womens Air Force 1 Shoes<br>
+          Quantity: 1<br>
+          Price: $98.00<br><br>
+          Kids Sports Shoes<br>
+          Quantity: 1<br>
+          Price: 45.00</p><br>
+        <p>Subtotal: &emsp;$143.00<br>
+          Estimated Shipping: &emsp;$8.00<br>
+          Estimated Tax: &emsp;$12.35<br>
+          Total: &emsp;$163.35</p><br>
+      </div>
+    </div>
+    <div class="footer">
+      <p><a href="">Legal Information</a> | <a href="">Privacy Policy</a> |
+        <a href="">Copyright &copy; Team 6 Spring 2022</a>
+      </p>
+    </div>
+  </div>
+
+  <script language="javascript" type="text/javascript">
+    function showpara()
+    {
+      document.getElementById("cardinfo").style.visibility=(document.payment.moreinfo.checked) ? "visible" : "hidden";
+      return true;
+    }
+  </script>
+</body>
+
+</html>
