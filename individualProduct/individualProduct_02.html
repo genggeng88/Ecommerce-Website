@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Individual Product</title>
+  <link href="../template.css" type="text/css" rel="stylesheet">
+  <link href="individual.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div id="logo"><a href="../home.html"><img src="../images/teamLogo.png" width="80" height="80"></a></div>
+      <div id="search">
+        <form action="" method="get">
+          <label>
+            <input type="text" name="search" size="50" maxlength="100" placeholder="Search">
+          </label>
+        </form>
+      </div>
+      <div id="home"><a class="box" href="../home.html">Home</a></div>
+      <div id="products"><a class="box" href="../products.html">Products</a></div>
+      <div id="about"><a class="box" href="../about.html">About Us</a></div>
+      <div id="contact"><a class="box" href="../contact.html">Contact Us</a></div>
+      <div id="survey"><a class="box" href="../survey.html">Survey</a></div>
+      <div id="login"><a class="box" href="../login.html">Login | Signup</a></div>
+      <div id="cart"><a class="box" href="../cart.html">Cart | Checkout</a></div>
+    </div>
+    <div class="main">
+      <div class="image">
+        <img class="mySlides" src="../images/kids01.jpeg" width=300 height="300">
+        <img class="mySlides" src="../images/shoes/shoe02-02.jpeg" width=300 height="300">
+        <img class="mySlides" src="../images/shoes/shoe02-03.jpeg" width=300 height="300">
+        <img class="mySlides" src="../images/shoes/shoe02-04.jpeg" width=300 height="300">
+        <img class="mySlides" src="../images/shoes/shoe02-05.jpeg" width=300 height="300">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) { slideIndex = 1 }
+          if (n < 1) { slideIndex = x.length }
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          x[slideIndex - 1].style.display = "block";
+          x[slideIndex - 1].style.paddingLeft = "135px";
+        }
+      </script>
+
+      <div class="describe">
+        <br>Kids Sports Shoes. Little Boy.<br><br>
+        <div class="size">
+          <p>Size: </p>
+          <div class="rectangle">5</div>
+          <div class="rectangle">6</div>
+          <div class="rectangle">7</div>
+          <div class="rectangle">8</div>
+          <div class="rectangle">9</div>
+          <div class="rectangle">10</div>
+        </div>
+        <div class="color">
+          <p>Color: </p>
+          <div class="circle black"></div>
+          <div class="circle red"></div>
+          <div class="circle blue"></div>
+          <div class="circle grey"></div>
+          <div class="circle white"></div>
+        </div>
+        <label for="quantity">Qty:</label>
+        <select id="qty" name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select><br><br>
+        Price: $45.0<br><br>
+
+        <input type="submit" value="Put In Cart">
+        <input type="submit" value="Buy it Now">
+        <input type="submit" value="Save for Later">
+      </div>
+      <div class="alsoLike">
+        <p font="size+1"><b>You May Also Like:</b></p>
+      </div>
+      <div class="related">
+        <div class="related01">
+          <img src="../images/women01.jpeg" width="200" height="200"><br><br>
+          <a href="" class="box box2">Womens Air Force 1 Shoes</a><br><br>Brand: Nike<br />Price: $98.00
+        </div>
+        <div class="related02">
+          <img src="../images/KidsCheckerboardSlip-On.png" width="200" height="200"><br><br>
+          <a href="" class="box box2">Kids Checkerboard Slip-On</a><br><br>Brand: Vans<br />Price:
+          $35.00
+        </div>
+        <div class="related03">
+          <img src="../images/Adilette_Aqua_Slides.jpg" width="200" height="200"><br><br>
+          <a href="" class="box box2">Adilette Aqua Slides</a><br><br>Brand: Adidas<br />Price: $25.00
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p><a href="">Legal Information</a> | <a href="">Privacy Policy</a> |
+      <a href="">Copyright &copy; Team 6 Spring 2022</a>
+    </p>
+  </div>
+</body>
+
+</html>

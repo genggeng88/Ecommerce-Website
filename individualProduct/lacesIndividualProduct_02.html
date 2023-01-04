@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Individual Product</title>
+  <link href="../template.css" type="text/css" rel="stylesheet">
+  <link href="individual.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div id="logo"><a href="../home.html"><img src="../images/teamLogo.png" width="80" height="80"></a></div>
+      <div id="search">
+        <form action="" method="get">
+          <label>
+            <input type="text" name="search" size="50" maxlength="100" placeholder="Search">
+          </label>
+        </form>
+      </div>
+      <div id="home"><a class="box" href="../home.html">Home</a></div>
+      <div id="products"><a class="box" href="../products.html">Products</a></div>
+      <div id="about"><a class="box" href="../about.html">About Us</a></div>
+      <div id="contact"><a class="box" href="../contact.html">Contact Us</a></div>
+      <div id="survey"><a class="box" href="../survey.html">Survey</a></div>
+      <div id="login"><a class="box" href="../login.html">Login | Signup</a></div>
+      <div id="cart"><a class="box" href="../cart.html">Cart | Checkout</a></div>
+    </div>
+    <div class="main">
+
+      <div class="image">
+        <img class="mySlides" src="../images/laces/newbalance_Athletic_Pink.jpg" width=300 height="300">
+        <img class="mySlides" src="../images/laces/lace01-02.webp " width=300 height="300">
+        <img class="mySlides" src="../images/laces/lace01-03.jpeg" width=300 height="300">
+        <img class="mySlides" src="../images/laces/lace01-04.jpeg" width=300 height="300">
+        <img class="mySlides" src="../images/laces/lace01-05.jpeg" width=300 height="300">
+        <img class="mySlides" src="../images/laces/lace01-06.jpeg" width=300 height="300">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) { slideIndex = 1 }
+          if (n < 1) { slideIndex = x.length }
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          x[slideIndex - 1].style.display = "block";
+          x[slideIndex - 1].style.paddingLeft = "160px";
+        }
+      </script>
+
+      <div class="describe">
+        <br>New Balance Athletic Pink. Nb: 2 pairs<br><br>
+        <div class="color">
+          <p>Color: </p>
+          <div class="circle black"></div>
+          <div class="circle red"></div>
+          <div class="circle pink"></div>
+          <div class="circle blue"></div>
+          <div class="circle grey"></div>
+          <div class="circle white"></div>
+        </div>
+        <label for="quantity">Qty:</label>
+        <select id="qty" name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select><br><br>
+        Price: $10.02<br><br>
+
+        <input type="submit" value="Put In Cart">
+        <input type="submit" value="Buy it Now">
+        <input type="submit" value="Save for Later">
+      </div>
+      <div class="alsoLike">
+        <p font="size+1"><b>You May Also Like:</b></p>
+      </div>
+      <div class="related">
+        <div class="related01">
+          <img src="../images/laces/newbalance_Athletic_Brown.jpg" width="200" height="200"><br><br>
+          <a href="" class="box box2">New Balance Athletic Brown</a><br><br>Nb: 2 pairs<br />Price: $10.02
+        </div>
+        <div class="related02">
+          <img src="../images/laces/rockport_Hiker_White.jpg" width="200" height="200"><br><br>
+          <a href="" class="box box2">Rockport Hiker White</a><br><br>Nb: 1 pair<br />Price:
+          $6.5
+        </div>
+        <div class="related03">
+          <img src="../images/laces/newbalance_Athletic_Blue.jpg" width="200" height="200"><br><br>
+          <a href="" class="box box2">New Balance Athletic Blue</a><br><br>Nb: 2 pairs<br />Price: $10.02
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p><a href="">Legal Information</a> | <a href="">Privacy Policy</a> |
+      <a href="">Copyright &copy; Team 6 Spring 2022</a>
+    </p>
+  </div>
+</body>
+
+</html>
